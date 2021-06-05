@@ -1,11 +1,3 @@
-.hero{
-    background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), 
-    url("../images.other/bgd-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 480px 400px;
-}
 .hero__title {
     font-weight: 900;
     font-size: 26px;
@@ -13,28 +5,93 @@
     text-align: center;
     letter-spacing: 0.06em; 
     text-transform: uppercase;
-    margin: 200px auto 40px;
+    margin: 118px auto 30px;
     color: #FFFfff;
 }
+@media screen and (min-device-pixel-ratio:2) and (min-width: 320px) and (max-width:767px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width:767px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width:767px){
+    .hero{
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/bgd-mobile2x.jpg");
+    }
+}
+    
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .hero{
+    padding-bottom: 118px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/bgd-mobile.jpg");
+    background-color:#2F303A;
+    background-position: center;
+    background-size: 480px 400px;
+    }
+}
+@media screen and (min-device-pixel-ratio:2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px){
+    .hero{
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/bgd-tablet@2x.jpg");
+    }
+}
 
-// .hero{
-//     background-image: linear-gradient(
-//     rgba(47, 48, 58, 0.4),
-//     rgba(47, 48, 58, 0.4)), 
-//     url("../images.other/bgd-mobile.jpg");
-//     width:1600px;
-//     height:600px;
-//     background-color:#2F303A;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-// }
-// .hero__title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.364;
-//     text-align: center;
-//     letter-spacing: 0.06em; 
-//     text-transform: uppercase;
-//     margin: 200px auto 40px;
-//     color: #FFFfff;
-// }
+@media screen and (min-width: 768px){
+    .hero{
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/bgd-tablet.jpg");
+        background-color:#2F303A;
+        padding-bottom: 118px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+    }
+    .hero .container{
+        display: flex;
+    }
+}
+@media screen and (min-device-pixel-ratio:2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px){
+    .hero{
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/background.jpg");
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero{
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url("../images.other/background.jpg");
+        background-color:#2F303A;
+        padding-bottom: 118px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+    }
+    .hero .container{
+        display: flex;
+    }
+    .hero__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.364;
+        text-align: center;
+        letter-spacing: 0.06em; 
+        text-transform: uppercase;
+        margin: 200px auto 40px;
+        color: #FFFfff;
+    }
+}
